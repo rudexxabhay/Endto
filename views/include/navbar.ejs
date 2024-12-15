@@ -1,0 +1,56 @@
+<nav class="navbar navbar-expand-md bg-body-light border-bottom sticky-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/listing"><i class="fa-solid fa-compass"></i></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <!-- Navbar Left Links -->
+            <div class="navbar-nav">
+                <a class="nav-link" href="/listing">Explore</a>
+            </div>
+     
+
+
+            <style>
+                .btn-search{
+                    background-color: #fe424d;
+                    color: #fff;
+                    border-radius: 25px;
+                }
+                .btn-search:hover{
+                    background-color: #fe424d;
+                    color: #fff;
+                }
+                .search-inp{
+                    border-radius: 25px;
+                    padding: 0.5rem 3rem 0.5rem 3rem;
+                    font-size: 1rem;
+                }
+            </style>
+            <!-- Navbar Right Links with Search Form -->
+            <div class="navbar-nav ms-auto d-flex align-items-center">
+                <form class="d-flex" role="search" style="max-width: 400px; width: 100%;">
+                    <!-- Search input with proper width constraint -->
+                    <input class="form-control me-2 search-inp" type="search" placeholder="Search destination" aria-label="Search" style="flex-grow: 1; width: 80%;">
+                    <!-- Search button with fixed size -->
+                    <button class="btn btn-search" type="submit" style="min-width: 100px; max-height: 41px;">Search</button>
+                </form>
+            </div>
+            <!-- Conditional Login / Logout Links -->
+        
+            <div class="navbar-nav ms-auto">
+                <% if (!currUser) { %>
+                    <a class="nav-link" href="/login">Login</a>
+                    <a class="nav-link" href="/signup">Sign Up</a>
+                <% } %>
+
+                <% if (currUser) { %>
+                    <a class="nav-link" href="/listing/new">Add new listing</a>
+                    <a class="nav-link" href="/logout">Logout</a>
+                <% } %>
+            </div>
+        </div>
+    </div>
+</nav>

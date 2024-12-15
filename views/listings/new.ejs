@@ -1,0 +1,55 @@
+<% layout("/layouts/boilerplate.ejs")%>
+<body>
+    <h3 class="form-heading">Enter new listing</h3>
+    <form action="/listing" method="POST" class="form-container needs-validation" novalidate enctype="multipart/form-data">
+        <div class="mb-3">
+            <label for="title" class="form-label">Title</label>
+            <input type="text" name="listing[title]" placeholder="Enter title" class="form-control" required>
+            <div class="invalid-feedback">
+                Please provide a title.
+            </div>
+        </div>
+
+        <div class="mb-3">
+            <label for="description" class="form-label">Description</label>
+            <textarea name="listing[description]" class="form-control" placeholder="Enter description" required></textarea>
+            <div class="invalid-feedback">
+                Please provide a description.
+            </div>
+        </div>
+        
+        <div class="mb-3">
+            <label for="image" class="form-label">Upload image</label>
+            <input type="file" name="listing[image]" class="form-control" placeholder="Enter image URL">
+        </div>
+
+        <div class="mb-3">
+            <label for="price" class="form-label">Price</label>
+            <input  name="listing[price]" class="form-control" placeholder="Enter price" required>
+            <div class="invalid-feedback">
+                Please provide a price.
+            </div>
+        </div>
+
+        <div class="mb-3">
+            <label for="location" class="form-label">Location</label>
+            <input type="text" name="listing[location]" class="form-control" placeholder="Enter location" required>
+            <div class="invalid-feedback">
+                Please provide a location.
+            </div>
+        </div>
+
+        <div class="mb-3">
+            <label for="country" class="form-label">Country</label>
+            <input type="text" name="listing[country]" class="form-control" placeholder="Enter country" required>
+            <div class="invalid-feedback">
+                Please provide a country.
+            </div>
+        </div>
+
+        <button class="btn-submit">Add now</button>
+    </form>
+
+    
+</body>
+

@@ -1,0 +1,44 @@
+<% layout("/layouts/boilerplate.ejs")%>
+
+    <body>
+        <h3>Edit listing</h3>
+        <form action="/listing/<%=listing._id%>?_method=PUT" method="POST" enctype="multipart/form-data">
+            <div class="mb-3">
+                <label for="title" class="form-label">Title</label>
+                <input type="text" name="listing[title]" value="<%=listing.title%>" class="form-control">
+            </div>
+
+            <div class="mb-3">
+                <label for="description" class="form-label">Description</label>
+                <textarea name="listing[description]" class="form-control"><%=listing.description%></textarea>
+            </div>
+
+            <div class="mb-3 w-25">
+                Original listing image 
+                <img src="<%=listing.image.url%>" alt="" class="img-fluid">
+            </div>
+            <div class="mb-3">
+                <label for="image" class="form-label">Upload new image</label>
+                <input type="file" name="listing[image]" class="form-control">
+            </div>
+
+            <div class="mb-3">
+                <label for="price" class="form-label">Price</label>
+                <input name="listing[price]" class="form-control" value="<%=listing.price%>">
+            </div>
+
+            <div class="mb-3">
+                <label for="location" class="form-label">Location</label>
+                <input type="text" name="listing[location]" class="form-control" value="<%=listing.location%>">
+            </div>
+
+            <div class="mb-3">
+                <label for="country" class="form-label">Country</label>
+                <input type="text" name="listing[country]" class="form-control" value=" <%=listing.country%>">
+            </div>
+
+            <button class="btn-submit">Edit now</button>
+
+
+        </form>
+    </body>

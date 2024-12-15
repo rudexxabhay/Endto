@@ -1,0 +1,185 @@
+body{
+    font-family: "Plus Jakarta Sans", sans-serif !important;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.navbar {
+    height: 5rem;
+    background-color: white;
+}
+
+.fa-compass {
+    color: #fe424d;
+    font-size: 2rem;
+}
+
+.nav-link {
+    color: #222222 !important;
+}
+
+/* Footer */
+
+.f-info-links a {
+    text-decoration: none;
+    color: #222222;
+}
+
+.f-info-links a:hover {
+    text-decoration: underline;
+
+}
+
+.f-info-links,
+.f-info-socials, .f-info-brand {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.f-info-socials i{
+    margin-right: 1rem;
+    font-size: 1.2rem;
+}
+
+.f-info {
+    text-align: center;
+    height: 8re;
+    background-color: #ebebeb;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: space-evenly;
+}
+/*Cards*/
+.listing-card{
+    border: none !important;
+    margin-bottom: 2rem;
+}
+.card-img-top{
+    border-radius: 1rem !important;
+    width: 100% !important;
+    object-fit: cover !important;
+}
+.card-body{
+    padding: 0 !important;
+
+}
+.card-text p{
+    font-weight: 400;
+}
+.listing-links{
+    text-decoration: none;
+}
+
+/*Card effect*/
+.card-img-overlay{
+    opacity: 0;
+}
+.card-img-overlay:hover{
+    opacity: 0.2;
+    background-color: #fff;
+}
+
+/*form*/
+/* General styles for the body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Center the form on the page */
+.form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+}
+
+/* Heading styling */
+.form-heading {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Form label styling */
+.form-label {
+    font-weight: bold;
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+/* Form input fields styling */
+.form-control {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+/* Focus state for inputs */
+.form-control:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Button styling */
+.btn-submit {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+.btn-submit:hover {
+    background-color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    /* Adjust form container padding and font sizes for smaller screens */
+    .form-container {
+        padding: 15px;
+    }
+
+    .form-heading {
+        font-size: 1.75rem;
+    }
+
+    .form-control {
+        font-size: 0.95rem;
+        padding: 8px;
+    }
+
+    .btn-submit {
+        font-size: 0.95rem;
+        padding: 10px;
+    }
+}
+
+/*Show image */
+.show-img{
+   height: 30vh;
+}
+.btns{
+    display: flex;
+}
